@@ -1,0 +1,141 @@
+@page {
+    size: A4;
+    margin: 0.7in 0.7in 0.7in 0.7in;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 11pt;
+    color: #000;
+    margin: 0;
+}
+
+.page {
+    width: 100%;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    /* margin-bottom: 10px; */
+}
+
+.name {
+    font-size: 22pt;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.location {
+    font-size: 10.5pt;
+}
+
+.contact {
+    font-size: 10pt;
+}
+
+/* SECTION */
+.section {
+    margin-top: 12px;
+}
+
+.section-title {
+    font-size: 13pt;
+    /* font-weight:600; */
+    font-style: initial;
+    text-transform: uppercase;
+    border-bottom: 1px solid #000000;
+    margin-bottom: 6px;
+}
+
+/* ROWS */
+.row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11pt;
+}
+
+.left {
+    width: 75%;
+}
+
+.right {
+    width: 25%;
+    text-align: right;
+}
+
+.bold {
+    font-weight: bold;
+   
+}
+
+.italic {
+    font-style: italic;
+    font-size: 11pt;
+}
+
+.space-top {
+    margin-top: 6px;
+}
+
+/* GRID SKILLS */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+    font-size: 10.5pt;
+}
+
+/* BULLETS */
+.bullets {
+    margin-top: 4px;
+    padding-left: 16px;
+}
+
+.bullets li {
+    font-size: 10.5pt;
+    margin-bottom: 3px;
+}
+
+/* SKILLS */
+.skills {
+    font-size: 10.5pt;
+}
+
+/* CERTS */
+.certs {
+    font-size: 10.5pt;
+    line-height: 1.4;
+}
+
+/* DOWNLOAD */
+.download {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 6px 14px;
+    font-size: 11pt;
+    cursor: pointer;
+}
+
+/* PRINT */
+@media print {
+    button {
+        display: none;
+    }
+}
+.contact {
+    font-size: 10pt;
+}
+
+.contact a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact i {
+    margin-right: 4px;
+    font-size: 10pt;
+}
